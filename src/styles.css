@@ -1,1 +1,350 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'ubuntuR';
+    src: url(/assets/fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ubuntuB';
+    src: url(/assets/fonts/Ubuntu-Bold.ttf);
+}
+
+body{
+  font-family: 'ubuntuR';
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #2a2a2a;
+  background-color: #fff;
+}
+
+h1,h2,h3,h4{
+  font-family: 'ubuntuB';
+}
+
+ /*HELPER Classes====start*/
+ .text-orange{
+  color: #f15a2b;
+ }
+.padding-right-0{
+  padding-right: 0;
+}
+.padding-top-3p{
+  padding-top: 3%
+}
+.padding-left-3p{
+  padding-left: 3%
+}
+.padding-top-5p{
+  padding-top: 5%
+}
+.padding-0{
+  padding: 0;
+}
+.width-full{
+  width: 100%;
+}
+
+.width-20p{
+  width: 20% !important;
+}
+.width-30p{
+  width: 30% !important;
+}
+
+
+.font-white{
+  color: #fff;
+}
+
+.empty-50{
+  min-height: 50px;
+}
+.empty-20{
+  min-height: 20px;
+}
+
+.bg-white{
+  background-color: #FFF;
+}
+
+.bg-light-grey{
+  background-color: #f7f7f7;
+}
+
+.border-radius-0{
+  border-radius: 0;
+}
+
+.border-left-none{
+  border-left: none;
+}
+.margin-0{
+  margin: 0;
+}
+
+.margin-left-3p{
+  margin-left: 3%
+}
+
+.alinement-center{
+  text-align: -webkit-center;
+}
+
+.empty-100{
+  min-height: 100px;
+}
+.empty-20{
+  min-height: 20px;
+}
+
+.bg-light-green{
+  background-color: #b6d7a8;
+}
+
+.float-right{
+  float: right !important;
+}
+.float-left{
+  float: left;
+}
+
+.text-white{
+  color: #fff;
+}
+
+.text-grey{
+  color: #c5c5c5;
+}
+
+/*HELPER Classes====end*/
+
+/* ===== Main Navigation Menu =====*/
+
+
+.navbar{
+  z-index: 1;
+  border-radius: 0;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+.margin-nav-top{
+  min-height: 50px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar-brand>img{
+  width: 150px;
+}
+
+.input-group-addon{
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.form-control{
+  border-color: #f15a2b;
+  border-radius: 0;
+}
+
+.search-box:focus {
+    border-color: #f15a2b;
+    outline: 0;
+    box-shadow: none;
+}
+.search-box{
+  border-right: 0;
+  border-color: #f15a2b;
+  border-radius: 0;
+}
+
+.search-box:focus {
+    border-color: #f15a2b;
+    outline: 0;
+    box-shadow: none;
+}
+.input-group-addon{
+  border-color: #f15a2b;
+  border-radius: 0;
+}
+
+.search-btn{
+  background-color: transparent;
+  color: #f15a2b;
+  padding-left: 10px;
+  padding-bottom: 4px;
+  border-radius: 0;
+}
+
+.btn-menu{
+  border-radius: 0;
+  float: left;
+  padding-top: 10px;
+  font-size: 24px;
+  color: #f15a2b;
+}
+
+li>.active{
+  color: #f15a2b !important; 
+  background-color: transparent;
+  border: 1px solid;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color: #f15a2b;
+  background-color: transparent;
+}
+
+/* ===== Main Navigation Menu =====end*/
+
+/*===== side menu ===== start*/
+
+
+/*===== side menu ===== end*/
+/*===== HEadding Page ===== start*/
+.table-view{
+  display: table;
+  height: 100vh;
+}
+
+.full-bg{ 
+  width: 100%;
+  height: 100vh;
+  background-image: url('assets/img/Banner_01.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: table;
+} /*parallax BG*/
+
+.center-block{
+  display: table-cell;
+  vertical-align: middle;
+}
+/*===== HEadding Page ===== end*/
+
+/*=====All Forms ===== start*/
+
+/*===== SignUP1 form =====start*/
+.form-heading{
+  text-align: center;
+  padding: 16px;
+  font-size: larger;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.bg-heading{
+  float: right;
+  padding-top: 400px
+}
+
+.form-style{
+  padding: 20px 30px;
+  background-color: #fff;
+}
+
+.form-padding{
+  padding: 10px 0;
+}
+
+.btn-submit-form{
+  color: #fff;
+  background-color: #f15a2b;
+  border-color: #f15a2b;
+}
+
+.btn:hover{
+  color: #fff; 
+  background-color: rgba(241, 90, 28, 0.75);
+  text-decoration: none;
+}
+
+.addon-style{
+  background-color: #f15a2b;
+  color: #fff;
+}
+
+.input-group .form-control{
+  z-index: 0;
+}
+.form-inline .input-group .input-group-addon{
+  width: 40px;
+}
+
+/*note: some property of 'signUp from' may also includes in other form*/
+/*===== SignUP1 form =====end*/
+
+/*=====All Forms ===== ends*/
+
+
+/*=====learn-signup2-carousel=====starts*/
+.bottom-0{
+  bottom: -50px;
+}
+
+.height-400p{
+  min-height: 400px;
+}
+
+.icon-size-lg50{
+  font-size: 50px;
+}
+
+.indicator-position{
+  bottom: -375px;
+  position: inherit;
+}
+
+.info-bg{ 
+  width: 100%;
+  height: 100vh;
+  background-image: url('assets/img/learn/bg-info.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: table;
+}
+.panel-default>.panel-heading:active{
+  background-color: #000;
+}
+/*=====learn-signup2-carousel=====Ends*/
+
+/*=====learn-Payment=====Starts*/
+
+.card-inputs{
+  display: inline-flex;
+}
+
+.paymet-bg{ 
+  width: 100%;
+  height: 100vh;
+  background-image: url('assets/img/learn/bg-pay.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: table;
+}
+
+.learn-slider-style{
+  background-color: rgba(14, 14, 14, 0.5);
+}
+
+/*=====learn-Payment=====Ends*/
+
+/*==== Slider CSS === */
+.carousel i{
+  color: #f15a2b;
+}
+.carousel-indicators .active{
+  background-color: #f15a2b;
+  border-color: #f15a2b; 
+}
+

@@ -1,0 +1,48 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+  <!-- =====side menu===== -->
+<!-- <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+  <span id="main" (click)="openNav()">&#9776;</span> -->
+
+<!-- =====side menu=====end -->
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="home"><img id="logo" src="assets/img/Logo-Onlitute.png" alt="Onlitute"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a routerLinkActive="active" routerLink="coach/coach-signup1">Coach<span class="sr-only">(current)</span></a></li>
+        <li><a routerLinkActive="active" routerLink="learn/learn-signup1" >Learn</a></li>
+        <li><a routerLinkActive="active" routerLink="home" >Help</a></li>
+        <li><a routerLinkActive="active" routerLink="home" >Sign In</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Search Here..">
+            <span class="input-group-addon padding-0">
+            <button  class="btn search-btn"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
