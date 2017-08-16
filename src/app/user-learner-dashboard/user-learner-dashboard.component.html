@@ -1,0 +1,156 @@
+<div class="empty-100"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4">
+      <form action="" class="form-inline">
+        <div class="row">
+          <!-- Sort By filters-->
+          <div class="col-md-6">
+            <label>Topic:</label>
+            <select class="form-control">
+                <option>Resume Review</option>
+                <option>Other Option</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+          </div>
+          <div class="col-md-6 text-right padding-right-0">
+            <label>Sort By:</label>
+            <select class="form-control">
+                <option>Star rating</option>
+                <option>other options</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+          </div>
+        </div>
+        <!-- Sort By filters-->
+        <div class="row">
+          <ul class="coach-list">
+            <li *ngFor="let coachPro of coachs | slice:0:5" (click)="selectedCoach(coachPro)" [class.selected]="coachPro === coachDetails">
+              <!-- Coach list items-->
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <!-- User Avatar-->
+                  <img src="assets/img/learn/user-avatar-learner.png" alt="user avatar" width="75">
+                </div>
+                <!-- User Avatar-->
+                <div class="col-md-6">
+                  <!-- User info-->
+                  <strong>{{coachPro.name}}</strong> <i *ngIf="coachPro.verifyed" class="fa fa-check-circle text-success"
+                    aria-hidden="true"></i>
+                  <br>
+                  <small><em>{{coachPro.qualification}}</em></small>
+                  <br>
+                  <ul class="star-rating">
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+                <!-- User info-->
+                <div class="col-md-3 text-center">
+                  <h2>${{coachPro.price}}</h2>
+                </div>
+              </div>
+            </li>
+            <!-- Coach list items-->
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-offset-1 col-lg-7" *ngIf="clickedData">
+      <div class="row" >
+        <div class="col-md-1">
+          <img src="assets/img/learn/user-avatar-learner.png" alt="user avatar" width="75" alt="">
+        </div>
+        <div class="col-md-3">
+          <strong>{{coachDetails.name}}</strong> <i class="fa fa-check-circle text-success" aria-hidden="true"></i>
+          <br>
+          <small><em>{{coachDetails.qualification}}</em></small>
+          <br>
+          <ul class="star-rating">
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <strong><i class="fa fa-briefcase" aria-hidden="true"></i> : 6yr(Founde: ola cabs)</strong>
+          <br>
+          <br>
+          <strong><i class="fa fa-graduation-cap" aria-hidden="true"></i>: Texas A&M University</strong>
+        </div>
+        <div class="col-md-3 float-right">
+          <button type="submit" class="btn btn-circle-lg ">${{coachDetails.price}}</button>
+        </div>
+      </div>
+      <div class="empty-50"></div>
+      <div class="row margin-0 padding-0">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                About Name suruname <span class="float-right">+</span></h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure
+                  of Web pages. <a href="#" target="_blank">Learn more.</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                Experience & Qualifications<span class="float-right">+</span>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of
+                  CSS and HTML conventions. <a href="#" target="_blank">Learn more.</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                Sessions at onlitute<span class="float-right">+</span>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML
+                  element such as colors, backgrounds, fonts etc. <a href="#" target="_blank">Learn more.</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                Availability<span class="float-right">+</span>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML
+                  element such as colors, backgrounds, fonts etc. <a href="#" target="_blank">Learn more.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-lg-offset-1 col-lg-7" *ngIf="!clickedData">
+      <h1 class="text-center">select Coach</h1>
+    </div>
+  </div>
+</div>
