@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalendarModule } from 'angular-calendar';
-import { DemoUtilsModule } from 'angular-calendar/demo-utils/module';
+import { DemoUtilsModule } from './demo-utils/module';
 
 import { Fold1Component } from './fold1/fold1.component';
 import { CoachViewComponent } from './coach-view/coach-view.component';
