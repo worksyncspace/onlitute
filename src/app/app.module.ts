@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalendarModule } from 'angular-calendar';
 import { DemoUtilsModule } from './demo-utils/module';
+// import { CountryPickerModule } from 'angular2-countrypicker';
 
 import { Fold1Component } from './fold1/fold1.component';
 import { CoachViewComponent } from './coach-view/coach-view.component';
@@ -25,7 +26,7 @@ const appRoutes: Routes = [
     component: Fold1Component
   },
    {
-    path: 'cal_test',
+    path: 'calendar',
     component: CalendarOnliComponent
   },
   {
@@ -86,6 +87,7 @@ const appRoutes: Routes = [
   RouterModule.forRoot(appRoutes),
   BrowserAnimationsModule,
   CalendarModule.forRoot(),
+  // CountryPickerModule.forRoot(),
   DemoUtilsModule,
   NgbModule,
   BrowserModule
