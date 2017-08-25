@@ -3,11 +3,11 @@ import {Router} from '@angular/router';
 
 
 @Component({
-  selector: 'app-fold1',
-  templateUrl: './fold1.component.html',
-  styleUrls: ['./fold1.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class Fold1Component implements OnInit {
+export class homeComponent implements OnInit {
 
   constructor(private _router: Router) {
 

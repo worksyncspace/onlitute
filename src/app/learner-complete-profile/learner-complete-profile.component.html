@@ -1,33 +1,47 @@
-<section id="home">
-<div class="width-full paymet-bg">
-  <div class="empty-100"></div>
-    <div class="empty-100"></div>
+<section id="learnerCompleteProfile">
+<div class="info-bg">
+	<div class="center-block">
   	<div class="container">
   		<div class="row">
 		    <div class="col-md-4 ">
-          <div class="form-heading">
-                Enter your payment info 
-            </div>
+		    	<div class="form-heading">
+		            Complete your profile
+		      </div>
 		      <form class="form-inline bg-light-grey margin-0 ">
 		        <div class="form-group login-form">
 		          <div class="form-style">
 		            <div class="input-group width-full form-padding">
-		              <div class="input-group-addon"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></div>
-		              <input type="text" class="form-control border-left-none" placeholder="Enter Card Number">
+		              <div class="input-group-addon addon-style"><i class="fa fa-user" aria-hidden="true"></i></div>
+		              <input type="text" class="form-control" placeholder="Name">
 		            </div>
-		            <div class="input-group form-paddings">
-                  <input type="text" class="form-control width-20p" placeholder="CVV">
-                  <input type="text" class="form-control width-30p margin-left-3p" placeholder="MM/YY">
-                  <input type="text" class="form-control width-20p float-right" placeholder="ZIP"> 
-                </div>
-                <div class="width-full form-padding">
-                    <button type="submit" class="btn btn-success width-full border-radius-0">Google Wallet</button>
-                    <div class="empty-20"></div>
-                    <button type="submit" class="btn btn-primary width-full border-radius-0">PayPal</button>
-                </div>
-                  <div class="empty-20"></div>
-		              <button type="submit" class="btn btn-default border-radius-0" routerLink="learn">Back</button>
-		              <button type="submit" class="btn btn-submit-form border-radius-0 float-right" routerLink="/userLearnerDashboard">Next</button>
+		            <div class="input-group width-full form-padding">
+		              <div class="input-group-addon addon-style"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+		              <input type="text" class="form-control" placeholder="Last Name">
+		            </div>
+		            <div class="input-group width-full form-padding"><!-- Select topic from list -->
+									<label for="">Choose at least one topic </label>
+									<select class="form-control">
+										<option value="">Programming</option>
+										<option value="">Marketing</option>
+										<option value="">Sales</option>
+										<option value="">Digital</option>
+										<option value="">UI Design</option>
+									</select>
+								</div><!-- Select topic from list -->
+								<div class="input-group width-full form-padding"><!-- Select Sub-Topic from list -->
+									<label class="checkbox-inline">
+										<input type="checkbox" id="inlineCheckbox1" value="option1"> Java
+									</label>
+									<label class="checkbox-inline">
+										<input type="checkbox" id="inlineCheckbox2" value="option2"> Python
+									</label>
+									<label class="checkbox-inline">
+										<input type="checkbox" id="inlineCheckbox3" value="option3"> Ruby
+									</label>
+								</div><!-- Select Sub-topic from list -->
+								
+		              <button type="submit" class="btn btn-default border-radius-0">Back</button>
+		              <button type="submit" class="btn btn-orange float-right" routerLink="/learn/learn-payment">Next</button>
 		          </div>
 		        </div>
 		      </form>
@@ -36,14 +50,14 @@
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators indicator-position">
-              <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
               <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner alinement-center">
+            <div class="carousel-inner text-center">
               <div class="item active">
                 <div class="empty-50"></div>
                 <h1 class="icon-size-lg50"><i class="fa fa-building" aria-hidden="true"></i></h1>
@@ -75,6 +89,7 @@
           </div>
 	    	</div>
 	    </div>
+		</div>
 	</div>
 </div>
 </section>
