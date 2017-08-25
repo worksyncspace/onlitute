@@ -9,12 +9,12 @@ import { CalendarModule } from 'angular-calendar';
 import { DemoUtilsModule } from './demo-utils/module';
 // import { CountryPickerModule } from 'angular2-countrypicker';
 
-import { Fold1Component } from './fold1/fold1.component';
+import { homeComponent } from './home/home.component';
 import { CoachViewComponent } from './coach-view/coach-view.component';
-import { LearnViewComponent } from './learn-view/learn-view.component';
-import { LearnerSignup02Component } from './learner-signup-02/learner-signup-02.component';
+import { PageLearnerComponent } from './page-learner/page-learner.component';
+import { LearnerCompleteProfileComponent } from './learner-complete-profile/learner-complete-profile.component';
 import { CoachSignup02Component } from './coach-signup-02/coach-signup-02.component';
-import { LearnPaymentComponent } from './learn-payment/learn-payment.component';
+import { LearnerPaymentComponent } from './learner-payment/learner-payment.component';
 import { UserLearnerDashboardComponent } from './user-learner-dashboard/user-learner-dashboard.component';
 import { UserLearnerDashboardCoachInfoComponent } from './user-learner-dashboard-coach-info/user-learner-dashboard-coach-info.component';
 import { CalendarOnliComponent } from './calendar-onli/calendar-onli.component';
@@ -23,7 +23,7 @@ import { CalendarOnliComponent } from './calendar-onli/calendar-onli.component';
 const appRoutes: Routes = [
   {
     path: 'home',
-    component: Fold1Component
+    component: homeComponent
   },
    {
     path: 'calendar',
@@ -38,15 +38,15 @@ const appRoutes: Routes = [
     children: [
       {
         path: 'learn-signup1',
-        component: LearnViewComponent,
+        component: PageLearnerComponent,
       },
       {
         path: 'learn-signup2',
-        component: LearnerSignup02Component,
+        component: LearnerCompleteProfileComponent,
       },
        {
         path: 'learn-payment',
-        component: LearnPaymentComponent,
+        component: LearnerPaymentComponent,
       },
     ]
   },
@@ -65,7 +65,7 @@ const appRoutes: Routes = [
   },
    {
     path: '**',
-    component: Fold1Component
+    component: homeComponent
   },
 ];
 
@@ -73,12 +73,12 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderNavComponent,
-    Fold1Component,
+    homeComponent,
     CoachViewComponent,
-    LearnViewComponent,
-    LearnerSignup02Component,
+    PageLearnerComponent,
+    LearnerCompleteProfileComponent,
     CoachSignup02Component,
-    LearnPaymentComponent,
+    LearnerPaymentComponent,
     UserLearnerDashboardComponent,
     UserLearnerDashboardCoachInfoComponent,
     CalendarOnliComponent

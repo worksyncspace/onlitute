@@ -10,17 +10,29 @@
 /* This is a new comment */
 body{
   font-family: 'ubuntuR';
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.42857143;
   color: #2a2a2a;
   background-color: #fff;
+  /* padding-top: 50px; */
 }
-
+h3{
+  line-height: 160%;
+}
 h1,h2,h3,h4{
   font-family: 'ubuntuB';
 }
 
  /*HELPER Classes====start*/
+ .text-white{
+  color: #fff;
+}
+.text-grey{
+  color: #c5c5c5;
+}
+ .font-white{
+  color: #fff;
+}
  .text-orange{
   color: #f15a2b;
  }
@@ -49,12 +61,6 @@ h1,h2,h3,h4{
 .width-30p{
   width: 30% !important;
 }
-
-
-.font-white{
-  color: #fff;
-}
-
 .empty-50{
   min-height: 50px;
 }
@@ -85,7 +91,7 @@ h1,h2,h3,h4{
   margin-left: 3%
 }
 
-.alinement-center{
+.text-center{
   text-align: -webkit-center;
 }
 
@@ -106,20 +112,9 @@ h1,h2,h3,h4{
 .float-left{
   float: left;
 }
-
-.text-white{
-  color: #fff;
-}
-
-.text-grey{
-  color: #c5c5c5;
-}
-
 /*HELPER Classes====end*/
 
 /* ===== Main Navigation Menu =====*/
-
-
 .navbar{
   z-index: 1;
   border-radius: 0;
@@ -132,20 +127,32 @@ h1,h2,h3,h4{
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
 }
-.margin-nav-top{
-  min-height: 50px;
-  margin-bottom: 0;
-  border-radius: 0;
-}
 .navbar-brand>img{
   width: 150px;
 }
+li>.active{
+  color: #f15a2b !important; 
+  background-color: transparent;
+}
 
+.navbar-default .navbar-nav>li>a:hover{
+  color: #f15a2b;
+  background-color: transparent;
+}
+/* ===== Main Navigation Menu =====end*/
+
+/*==== Form Classes override ===*/
 .input-group-addon{
   background-color: #fff;
   border: 1px solid #ccc;
 }
-
+.input-group-addon{
+  border-color: #f15a2b;
+  border-radius: 0;
+}
+.input-group{
+  width: 100%;
+}
 .form-control{
   border-color: #f15a2b;
   border-radius: 0;
@@ -167,10 +174,7 @@ h1,h2,h3,h4{
     outline: 0;
     box-shadow: none;
 }
-.input-group-addon{
-  border-color: #f15a2b;
-  border-radius: 0;
-}
+
 
 .search-btn{
   background-color: transparent;
@@ -187,19 +191,8 @@ h1,h2,h3,h4{
   font-size: 24px;
   color: #f15a2b;
 }
+/*==== Form Classes override ===*/
 
-li>.active{
-  color: #f15a2b !important; 
-  background-color: transparent;
-  border: 1px solid;
-}
-
-.navbar-default .navbar-nav>li>a:hover{
-  color: #f15a2b;
-  background-color: transparent;
-}
-
-/* ===== Main Navigation Menu =====end*/
 
 /*===== side menu ===== start*/
 
@@ -253,18 +246,17 @@ li>.active{
   padding: 10px 0;
 }
 
-.btn-submit-form{
-  color: #fff;
+.btn-orange{
   background-color: #f15a2b;
-  border-color: #f15a2b;
+  color: #FFF;
+  font-size: 16px;
+  border-radius: 0;
+  border: 0;
 }
-
-.btn:hover{
-  color: #fff; 
-  background-color: rgba(241, 90, 28, 0.75);
-  text-decoration: none;
+.btn-orange:hover, .btn-orange:focus, .btn-orange:active{
+  background-color: #000;
+  color: #FFF
 }
-
 .addon-style{
   background-color: #f15a2b;
   color: #fff;
@@ -297,7 +289,7 @@ li>.active{
 }
 
 .indicator-position{
-  bottom: -375px;
+  bottom: -370px;
   position: inherit;
 }
 
