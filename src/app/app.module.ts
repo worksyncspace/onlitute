@@ -7,17 +7,27 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalendarModule } from 'angular-calendar';
 import { DemoUtilsModule } from './demo-utils/module';
-// import { CountryPickerModule } from 'angular2-countrypicker';
+import {AccordionModule} from 'primeng/primeng';     // accordion and accordion tab
+import {MenuItem} from 'primeng/primeng';            // api
+import {CheckboxModule} from 'primeng/primeng';
 
+/* Components */
 import { homeComponent } from './home/home.component';
-import { CoachViewComponent } from './coach-view/coach-view.component';
+import { CalendarOnliComponent } from './calendar-onli/calendar-onli.component';
+
+// Learner
 import { PageLearnerComponent } from './page-learner/page-learner.component';
 import { LearnerCompleteProfileComponent } from './learner-complete-profile/learner-complete-profile.component';
-import { CoachSignup02Component } from './coach-signup-02/coach-signup-02.component';
 import { LearnerPaymentComponent } from './learner-payment/learner-payment.component';
 import { UserLearnerDashboardComponent } from './user-learner-dashboard/user-learner-dashboard.component';
-import { UserLearnerDashboardCoachInfoComponent } from './user-learner-dashboard-coach-info/user-learner-dashboard-coach-info.component';
-import { CalendarOnliComponent } from './calendar-onli/calendar-onli.component';
+
+ // Coach
+import { CoachViewComponent } from './coach-view/coach-view.component';
+import { CoachCompleteProfileComponent } from './coach-complete-profile/coach-complete-profile.component';
+import { CoachPaymentComponent } from './coach-payment/coach-payment.component';
+import { CoachEducationExperienceComponent } from './coach-education-experience/coach-education-experience.component';
+import { CoachDashboardComponent } from './coach-dashboard/coach-dashboard.component';
+/* Components end*/
 
 
 const appRoutes: Routes = [
@@ -34,6 +44,10 @@ const appRoutes: Routes = [
     component: UserLearnerDashboardComponent
   },
   {
+    path: 'coach-dashboard',
+    component: CoachDashboardComponent
+  },
+  {
     path: 'learn',
     children: [
       {
@@ -44,7 +58,7 @@ const appRoutes: Routes = [
         path: 'learn-signup2',
         component: LearnerCompleteProfileComponent,
       },
-       {
+      {
         path: 'learn-payment',
         component: LearnerPaymentComponent,
       },
@@ -59,7 +73,15 @@ const appRoutes: Routes = [
       },
       {
         path: 'coach-signup2',
-        component: CoachSignup02Component
+        component: CoachCompleteProfileComponent
+      },
+      {
+        path: 'coach-payment',
+        component: CoachPaymentComponent
+      },
+      {
+        path: 'coach-edu-exp',
+        component: CoachEducationExperienceComponent
       },
     ]
   },
@@ -77,11 +99,13 @@ const appRoutes: Routes = [
     CoachViewComponent,
     PageLearnerComponent,
     LearnerCompleteProfileComponent,
-    CoachSignup02Component,
     LearnerPaymentComponent,
     UserLearnerDashboardComponent,
-    UserLearnerDashboardCoachInfoComponent,
-    CalendarOnliComponent
+    CalendarOnliComponent,
+    CoachCompleteProfileComponent,
+    CoachPaymentComponent,
+    CoachEducationExperienceComponent,
+    CoachDashboardComponent
   ],
   imports: [
   RouterModule.forRoot(appRoutes),
@@ -90,7 +114,8 @@ const appRoutes: Routes = [
   // CountryPickerModule.forRoot(),
   DemoUtilsModule,
   NgbModule,
-  BrowserModule
+  BrowserModule,
+  AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
