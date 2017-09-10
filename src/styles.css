@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'ubuntuR';
-    src: url(/assets/fonts/Ubuntu-Regular.ttf);
+    src: url(assets/fonts/Ubuntu-Regular.ttf);
 }
 
 @font-face {
     font-family: 'ubuntuB';
-    src: url(/assets/fonts/Ubuntu-Bold.ttf);
+    src: url(assets/fonts/Ubuntu-Bold.ttf);
 }
 /* This is a new comment  firse change kiya*/
 
