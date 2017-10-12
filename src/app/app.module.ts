@@ -6,10 +6,9 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalendarModule } from 'angular-calendar';
+import { FormsModule } from '@angular/forms';
 import { DemoUtilsModule } from './demo-utils/module';
-import {AccordionModule} from 'primeng/primeng';     // accordion and accordion tab
-import {MenuItem} from 'primeng/primeng';            // api
-import {CheckboxModule} from 'primeng/primeng';
+import {MultiSelectModule} from 'primeng/primeng';
 
 /* Components */
 import { homeComponent } from './home/home.component';
@@ -21,7 +20,7 @@ import { LearnerCompleteProfileComponent } from './learner-complete-profile/lear
 import { LearnerPaymentComponent } from './learner-payment/learner-payment.component';
 import { UserLearnerDashboardComponent } from './user-learner-dashboard/user-learner-dashboard.component';
 
- // Coach
+// Coach
 import { CoachViewComponent } from './coach-view/coach-view.component';
 import { CoachCompleteProfileComponent } from './coach-complete-profile/coach-complete-profile.component';
 import { CoachPaymentComponent } from './coach-payment/coach-payment.component';
@@ -30,12 +29,13 @@ import { CoachDashboardComponent } from './coach-dashboard/coach-dashboard.compo
 /* Components end*/
 
 
+
 const appRoutes: Routes = [
   {
     path: 'home',
     component: homeComponent
   },
-   {
+  {
     path: 'calendar',
     component: CalendarOnliComponent
   },
@@ -85,7 +85,7 @@ const appRoutes: Routes = [
       },
     ]
   },
-   {
+  {
     path: '**',
     component: homeComponent
   },
@@ -108,14 +108,15 @@ const appRoutes: Routes = [
     CoachDashboardComponent
   ],
   imports: [
-  RouterModule.forRoot(appRoutes),
-  BrowserAnimationsModule,
-  CalendarModule.forRoot(),
-  // CountryPickerModule.forRoot(),
-  DemoUtilsModule,
-  NgbModule,
-  BrowserModule,
-  AccordionModule
+    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
+    CalendarModule.forRoot(),
+    // CountryPickerModule.forRoot(),
+    DemoUtilsModule,
+    NgbModule,
+    FormsModule,
+    BrowserModule,
+    MultiSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

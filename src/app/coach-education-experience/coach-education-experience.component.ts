@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AutoCompleteModule} from 'primeng/primeng';
 
 @Component({
   selector: 'app-coach-education-experience',

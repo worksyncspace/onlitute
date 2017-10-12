@@ -5,42 +5,35 @@
         <div class="row">
           <div class="col-md-4 ">
             <div class="form-heading">
-                  Choose your profile
+              Choose your profile
             </div>
             <form class="form-inline bg-light-grey margin-0 ">
               <div class="form-group login-form">
                 <div class="form-style">
-                  <div class="input-group width-full form-padding">
+                  <div class="input-group  form-padding">
                     <div class="ui-inputgroup">
-                      <input type="text" pInputText placeholder="Profile Picture" class="form-control">     
-                      <button pButton type="button" class="btn btn-orange" label="Upload">Upload</button>    
+                      <input type="text" pInputText placeholder="Profile Picture" class="form-control">
+                      <button pButton type="button" class="btn btn-orange" label="Upload">Upload</button>
                     </div>
                   </div>
                   <div class="empty-20"></div>
                   <span class="text-orange small">Your opportunity to make a diffrence</span>
-                  <div class="input-group width-full form-padding">
+                  <div class="input-group  form-padding">
                     <div class="bg-gray empty-100">
                       <h4 class="text-center bg-black text-white padding-top-bottom-3">Select topics you want to coach</h4>
                       <div class="ui-inputgroup padding-left-5p">
-                        <input type="text" pInputText placeholder="Topics you want to teach" class="form-control">   
-                        <button pButton type="button" icon="fa-search" class="btn btn-orange"><i class="fa fa-search" aria-hidden="true"></i></button> 
+                        <p-multiSelect class="topics-style" [(ngModel)]="selectedCities" [options]="cities" name="topics"></p-multiSelect>
                       </div>
+                    </div>
                   </div>
-                  </div>
-                  <div class="input-group width-full form-padding"><!-- Select Sub-Topic from list -->
-                    <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1" value="option1"> Java
-                    </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox2" value="option2"> Python
-                    </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox3" value="option3"> Ruby
-                    </label>
-                  </div><!-- Select Sub-topic from list -->
                   
-                    <button type="submit" class="btn btn-default border-radius-0">Back</button>
-                    <button type="submit" class="btn btn-orange float-right" routerLink="/learn/learn-payment">Next</button>
+                  <div class="input-group  form-padding">
+                    <p>Selected Topic: {{selectedCities}}</p>
+                  </div>
+                  <!-- Select Sub-topic from list -->
+
+                  <button type="submit" class="btn btn-default border-radius-0">Back</button>
+                  <button type="submit" class="btn btn-orange float-right" routerLink="/learn/learn-payment">Next</button>
                 </div>
               </div>
             </form>
@@ -54,33 +47,43 @@
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
               </ol>
-  
+
               <!-- Wrapper for slides -->
               <div class="carousel-inner text-center">
                 <div class="item active">
                   <div class="empty-50"></div>
-                  <h1 class="icon-size-lg50"><i class="fa fa-building" aria-hidden="true"></i></h1>
+                  <h1 class="icon-size-lg50">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                  </h1>
                   <div class="empty-50"></div>
                   <h3>Build the right foundation. Any topic, anytime</h3>
                 </div>
-  
+
                 <div class="item">
                   <div class="empty-50"></div>
-                  <h1 class="icon-size-lg50"><i class="fa fa-superpowers" aria-hidden="true"></i></h1>
+                  <h1 class="icon-size-lg50">
+                    <i class="fa fa-superpowers" aria-hidden="true"></i>
+                  </h1>
                   <div class="empty-50"></div>
                   <h3>Counselling from experts who will help you make the right education and career choice</h3>
                 </div>
-              
+
                 <div class="item">
                   <div class="empty-50"></div>
-                  <h1 class="icon-size-lg50"><i class="fa fa-hourglass-start" aria-hidden="true"></i></h1>
+                  <h1 class="icon-size-lg50">
+                    <i class="fa fa-hourglass-start" aria-hidden="true"></i>
+                  </h1>
                   <div class="empty-50"></div>
-                  <h3>Interviewing is hard! We get it. Practice your interviews with your peers, colleague and professionals here</h3>
+                  <h3>Interviewing is hard! We get it. Practice your interviews with your peers, colleague and professionals
+                    here
+                  </h3>
                 </div>
-  
+
                 <div class="item">
                   <div class="empty-50"></div>
-                  <h1 class="icon-size-lg50"><i class="fa fa-line-chart" aria-hidden="true"></i></h1>
+                  <h1 class="icon-size-lg50">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                  </h1>
                   <div class="empty-50"></div>
                   <h3>Acquire the right skills here. We will cheer you as you advance career</h3>
                 </div>
@@ -91,5 +94,4 @@
       </div>
     </div>
   </div>
-  </section>
-  
+</section>
